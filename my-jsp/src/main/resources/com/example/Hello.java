@@ -7,7 +7,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-// Annotation-based configuration
 @WebServlet("/hello")
 public class Hello extends HttpServlet {
   private static final long serialVersionUID = 1L;
