@@ -6,6 +6,7 @@ apache-tomcat-9.0.102/
 .classpath
 .project
 .settings/
+target/
 
 # Log file
 *.log
