@@ -3,6 +3,10 @@ apache-tomcat-9.0.102/
 # Compiled class file
 *.class
 
+.classpath
+.project
+.settings/
+
 # Log file
 *.log
 

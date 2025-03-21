@@ -6,6 +6,11 @@
   <display-name>Archetype Created Web Application</display-name>
 
   <servlet>
+    <servlet-name>Hello</servlet-name>
+    <servlet-class>com.example.Hello</servlet-class>
+  </servlet>
+
+  <servlet>
     <servlet-name>jsp</servlet-name>
     <jsp-file>/index.jsp</jsp-file>
   </servlet>
