@@ -13,6 +13,8 @@ public class PresidentServlet extends HttpServlet {
     getServletContext()
         .getRequestDispatcher("/presidents.jsp")
         .forward(req, resp); // no need, /my-jsp which is app name.
+    
+    // resp.sendRedirect(location);
 
     System.out.println("get presidents");
   }
