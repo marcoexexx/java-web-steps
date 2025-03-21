@@ -1,6 +1,6 @@
 run:
 	mvn clean package
-	cp ./target/my-jsp.war ../apache-tomcat-9.0.102/webapps/
-	../apache-tomcat-9.0.102/bin/shutdown.sh
-	../apache-tomcat-9.0.102/bin/startup.sh
-	tail -f ../apache-tomcat-9.0.102/logs/catalina.out
+	cp ./target/my-jsp.war ${TOMCAT_HOME}/webapps/
+	${TOMCAT_HOME}/bin/shutdown.sh
+	${TOMCAT_HOME}/bin/startup.sh
+	tail -f ${TOMCAT_HOME}/logs/catalina.out
