@@ -4,3 +4,7 @@ run:
 	${TOMCAT_HOME}/bin/shutdown.sh
 	${TOMCAT_HOME}/bin/startup.sh
 	tail -f ${TOMCAT_HOME}/logs/catalina.out
+
+clean:
+	# TODO: clean project `war`
+	# rm ${TOMCAT_HOME}/webapps/my-jsp*
