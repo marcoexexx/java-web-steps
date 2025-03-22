@@ -8,7 +8,12 @@
 
   <body>
     <div class="group">
-      <img src="images/1.png" alt="pig" />
+
+      <% String x = "hello"; %>
+
+      <% out.println(x); %>
+
+      HHHHHHhjhjhgjh
     </div>
   </body>
 </html>
