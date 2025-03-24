@@ -3,6 +3,29 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
 
+  <context-param>
+    <param-name>authorizationToken</param-name>
+    <param-value>12341234</param-value>
+  </context-param>
+
+
+  <servlet>
+    <servlet-name>InitServlet</servlet-name>
+    <servlet-class>context.InitServlet</servlet-class>
+    <init-param>
+      <param-name>data</param-name>
+      <param-value>Rusty 🦀</param-value>
+      <description>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint
+        consectetur cupidatat.</description>
+    </init-param>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>InitServlet</servlet-name>
+    <url-pattern>/context/data</url-pattern>
+  </servlet-mapping>
+
+
   <servlet>
     <servlet-name>XMLServlet</servlet-name>
     <servlet-class>com.example.XMLServlet</servlet-class>
