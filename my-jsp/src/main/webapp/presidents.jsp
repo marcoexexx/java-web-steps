@@ -13,7 +13,7 @@
 
       <% out.println(x); %>
 
-      HHHHHHhjhjhgjh
+      <% out.println(request.getAttribute("q")); %>
     </div>
   </body>
 </html>
