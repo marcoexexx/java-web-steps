@@ -6,5 +6,4 @@ run:
 	tail -f ${TOMCAT_HOME}/logs/catalina.out
 
 clean:
-	# TODO: clean project `war`
-	# rm ${TOMCAT_HOME}/webapps/my-jsp*
+	rm -rf ${TOMCAT_HOME}/webapps/my-jsp*
