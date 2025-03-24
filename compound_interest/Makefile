@@ -8,4 +8,5 @@ run:
 	tail -f ${TOMCAT_HOME}/logs/catalina.out
 
 clean:
+	${TOMCAT_HOME}/bin/shutdown.sh
 	rm -rf ${TOMCAT_HOME}/webapps/${PROJECT_NAME}*
