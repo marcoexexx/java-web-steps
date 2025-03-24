@@ -3,6 +3,12 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
 
+  <error-page>
+    <location>/500.jsp</location>
+    <exception-type>java.lang.Throwable</exception-type>
+  </error-page>
+
+
   <context-param>
     <param-name>authorizationToken</param-name>
     <param-value>12341234</param-value>
