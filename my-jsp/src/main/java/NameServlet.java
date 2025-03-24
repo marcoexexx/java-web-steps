@@ -10,9 +10,27 @@ import javax.servlet.http.HttpServletResponse;
 public class NameServlet extends HttpServlet {
   @Override
   protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-    String q = req.getParameter("q");
+    String name = req.getParameter("name");
+    String age = req.getParameter("age");
 
-    req.setAttribute("q", q); // WARN: XSS
+    StringBuilder err = new StringBuilder();
+
+    // Validation
+    if (name == null) {
+      err.append("name is required.");
+    } else {
+      req.setAttribute("name", name);
+    }
+
+    if (age == null) {
+      err.append("age is required.");
+    } else {
+      req.setAttribute("age", name);
+    }
+
+    if (!err.isEmpty()) {
+      req.setAttribute("error", err.toString());
+    }
 
     getServletContext()
         .getRequestDispatcher("/presidents")
