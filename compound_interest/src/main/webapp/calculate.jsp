@@ -1,4 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page import="com.marco.compound_interest.Utils" %>
+
   <!DOCTYPE html>
   <html lang="en">
 
@@ -14,6 +16,12 @@
     <% String interestPercentage = (String) request.getAttribute("interestPercentage"); %>
     <% String years = (String) request.getAttribute("years"); %>
     <% String compoundingPeriod = (String) request.getAttribute("compoundingPeriod"); %>
+    <%
+      String hello = "hello, world!";
+      String bye = "bye bye";
+    %>
+
+    <%= Utils.hello() %>
 
     <form action="calculate" method="post" class="max-w-lg mx-auto p-6 bg-white rounded-lg shadow-lg">
       <h2 class="text-2xl font-semibold text-center mb-6">Loan Calculator</h2>
